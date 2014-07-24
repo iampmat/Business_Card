@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+
+body {
+    background-image: url('http://bambooo.info/wp-content/uploads/2014/01/bamboo-flooring-suppliers.jpg');
+}
+/* entire container, keeps perspective */
+ .flip-container {
+    perspective: 1000;
+}
+/* flip the pane when hovered */
+ .flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+    width: 427px;
+    height: 320px;
+    margin: auto;
+    position: fixed;
+    top: 320px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* flip speed goes here */
+ .flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+}
+/* hide back of pane during swap */
+ .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+   width: 427px;
+    height: 320px;
+}
+/* front pane, placed above back */
+ .front {
+    width: 427px;
+    height: 320px;
+    z-index: 2;
+}
+/* back, initially hidden pane */
+ .back {
+    position: absolute;
+    width: 427px;
+    height: 320px;
+    background: white;
+    -webkit-transform: rotateY(180deg);
+}
+.name {
+    margin-top: 5px;
+    position: relative;
+    font-size: 2em;
+    font-family:'Sanchez', serif;
+    color: #414f50;
+    text-align: center;
+    text-decoration: none;
+}
+.lineOne {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -55px;
+    width: 75px;
+    height: 2px;
+    background: #414f50;
+}
+.lineTwo {
+    position: absolute;
+    margin-left: 352px;
+    margin-top: -53px;
+    width: 75px;
+    height: 2px;
+    background: #414f50;
+}
+.lineThree{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 80px;
+    width: 182px;
+    height: 2px;
+    background: #414f50;
+}
+.lineFour{
+    position: absolute;
+    margin-left: 245px;
+    margin-top: 80px;
+    width: 182px;
+    height: 2px;
+    background: #414f50;
+}
+
+.website{
+    color:#bbbdbc;
+    margin-left: 84px;
+    margin-top: -35px;
+    position: absolute;
+    font-size: 1.6em;
+    font-family:'Sanchez', serif;
+    text-decoration: none;
+}
+ul{
+    margin-top: 45px;
+}
+.list {
+    margin-top: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 115px;
+}
+.instagram, .twitter, .gitHub {
+      position: absolute;
+      font-size: 1.2em;
+    margin-bottom: 20px;
+    position: relative;
+    font-family:'Sanchez', serif;
+    color: #414f50;
+    text-decoration: none;
+}
+.face-container{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 190px;
+}
+.instagram:before {
+   font-family: FontAwesome;
+   content: "\f16d";
+   vertical-align: middle;
+}
+.twitter:before {
+   font-family: FontAwesome;
+   content: "\f081";
+   vertical-align: middle;
+}
+.gitHub:before {
+   font-family: FontAwesome;
+   content: "\f092";
+   vertical-align: middle;
+}
